@@ -5,6 +5,10 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Store } from './app/store';
 import { Provider } from 'react-redux';
+import { fetchUser } from './Features/Users/userSlice';
+
+
+Store.dispatch(fetchUser());
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
